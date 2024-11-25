@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+$subbg: #e9ecef;
+
+body
+{
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contextMenu {
+  position: absolute;
+  background-color: $subbg;
+  border-radius: 2px;
+  padding: 1em;
+  width: 20%;
+  list-style: none;
+  margin: 0;
+  font-size: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contextMenu li {
+  cursor: pointer;
+}
+
+.contextMenu li:not(:last-child) {
+  margin: 0 0 1rem;
+}
+
+.pokemon-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.searchContainer
+{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.searchContainer .searchBar
+{
+  background-color: $subbg;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+
+.searchContainer .searchBar input
+{
+  background-color: $subbg;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.searchContainer .searchBar img
+{
+  height: 20px;
+}
+
+.pokemon-card
+{
+  background-color: $subbg;
+  width: 70%;
+  top: 55%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 1em;
+}
+
+.pokemon-card .sprites-section .main-sprite img
+{
+  height: 100px;
+}
+
+.pokemon-card .sprites-section .sprite-btn img
+{
+  height: 20px;
+}
+
+.pokemon-card .sprites-section .sprite-btn
+{
+  margin: 10px;
+}
+
+
+.id-section, .main-sprite, .description-section, .sprite-buttons, .pokemon-details, .pokemonStats, .pokemonFormsContainer
+{
+  display: flex;
+  justify-content: center;
+}
+
+.main-sprite, .id-section
+{
+  padding: 15px;
+}
+
+.id-section .name
+{
+  font-size: 30px;
+  text-transform: uppercase;
+  align-self: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.id-section .dexId
+{
+  align-self: center;
+  font-size: 15px;
+  color: gray;
+  margin-left: 10px;
+}
+
+.description-section span
+{
+  padding: 10px;
+  width: 60%;
+  float: left;
+}
+
+.pokemon-card hr
+{
+  width: 60%;
+}
+
+.id-section .types img
+{
+  height: 25px;
+  align-self: center;
+  margin: 5px;
+}
+
+.id-section .types
+{
+  margin-right: 1em;
+  align-self: center;
+}
+
+.pokemon-details
+{
+  padding: 1em;
+}
+
+.pokemon-details img
+{
+  height: 15px;
+  margin-right: 0.25em;
+  align-self: center;
+  display: inline;
+}
+
+.pokemon-details .details-el-title
+{
+  align-self: center;
+  display: inline;
+  font-size: 15px;
+}
+
+.pokemon-details-el span
+{
+  align-self: center;
+  display: inline;
+  font-size: 20px;
+  color: gray;
+}
+
+.pokemon-details-el
+{
+  display: inline;
+  margin: 10px;
+}
+
+.pokemonStats
+{
+  padding: 10px;
+}
+
+.stat-bar
+{
+  display: inline-block;
+  padding: 8px;
+  border-radius: 3px;
+  float: left;
+}
+
+.statName
+{
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.statName span
+{
+  margin: 10px;
+  color: gray;
+  font-size: 13px;
+  align-self: center;
+}
+
+.pokemonFormsContainer
+{
+  padding: 1em;
+}
+
+.form-element img
+{
+  height: 60px;
+}
+
+.form-element
+{
+  display: inline;
+  margin: 10px;
+}
+
+.form-element span
+{
+  align-items: center;
+  font-size: 25px;
+  color: gray;
+}
